@@ -1,0 +1,46 @@
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+int main()
+{
+   int i=0,k=0,row=0,column=0,n=0,z=0;
+   char j;
+   char s[100]="if man was meant to stay on the ground god would have given us roots";
+   int c;
+   char b[100];
+   
+   for(i=0;i<100;i++){
+       for(j='a';j<='z';j++){
+       if(s[i]==j){
+           b[k]=s[i];
+            k++;
+       }
+       }
+       continue;
+   }
+   c=strlen(b);
+   for(i=0;i<k;i++){
+       printf("%c",b[i]);
+   }
+   printf("\n");
+   row=sqrt(c);
+   column=row+1;
+  
+  for(i=0;i<row;i++){
+      for(j=z;j<column+z;j++){
+          printf("%c",b[j]);
+      }
+      printf("\n");
+      z=z+column;
+  }
+   
+   for(i=0;i<column;i++){
+       for(j=0;j<row;j++){
+           printf("%c",b[j*column+i]);
+       }
+       printf(" ");
+   }
+   
+    return 0;
+}
